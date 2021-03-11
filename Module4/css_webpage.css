@@ -1,0 +1,90 @@
+body{
+  background-color: rgb(221, 231, 252);
+}
+
+h1 {
+  text-align: center;
+  font-family: system-ui;
+  font-size: 50px;
+  color: #0f0f0f;
+  background-color: rgb(152, 154, 156);
+ }
+
+ nav {
+  text-align: center;
+  background-color: #adafaf;
+ }
+
+a {
+  font-size: 40px;
+  font-weight: bold ;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black ;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.active {
+  color: white;
+}
+ a:hover {
+   color: yellow;
+}
+ 
+/* img {
+   margin-left: 165px;
+   margin-right: auto; 
+
+  text-align: center;
+}  */
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif ;
+  }
+
+  /* .center{
+    /* margin-left: 0 auto; */
+    /* background-color: #0f0f0f; */
+    /* text-align: center; */
+  /* } */ 
+  
+  /* .left{
+    text-align: right;
+  } */
+
+  /* .right{
+    text-align: left;
+  }
+  .blue{
+    background-color: rgb(79, 108, 134);
+  } */
+
+table
+{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th 
+{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color:rgb(98, 128, 98);
+}
+td 
+{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
