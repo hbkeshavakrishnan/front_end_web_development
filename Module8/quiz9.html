@@ -1,0 +1,51 @@
+<DOCTYPE html>
+    <html>
+     <head>
+       <title>Quiz application</title>
+     </head>
+     <body onload="loadcontent()">
+       <FORM action = "quiz2.html"  onsubmit="save()">
+           What is JavaScript?
+           <INPUT TYPE="RADIO" id="1" VALUE="A" NAME="cc">
+           A. Another name for Java<BR>
+           <INPUT TYPE="RADIO" id="2" VALUE="B" NAME="cc">
+           B. A scripting language mostly for the web<BR>
+           <INPUT TYPE="RADIO"  id="3" VALUE="C" NAME="cc">
+           C. When you use Java without compiling<BR>
+           <INPUT TYPE="SUBMIT" NAME="Submit ">
+       </FORM>
+         
+       <script>
+             
+       var ans="Another name for Java";
+       function loadcontent(){
+               localStorage.setItem("question1",ans)
+           }
+   
+       function save()
+       
+           {
+               var score=0;
+               var togetele = document.getElementsByName("cc"); // list of radio buttons
+               // var val = localStorage.getItem('q1'); // local storage value
+   
+               for(var i=0;i<togetele.length;i++){
+                   var opt=togetele[i].value;
+                   // console.log(opt)
+                   if(togetele[i].checked){
+                       givenans=togetele[i].value;
+                       console.log(togetele[i].value)
+                       if(ans==givenans){
+                           // score=localStorage.getItem("score")
+                           score++;
+                           score=score.toString();
+                           localStorage.setItem("score",score)
+   
+               }
+   
+                   }
+               }
+           }
+   
+   
+       </script> 

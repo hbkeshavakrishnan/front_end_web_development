@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz application</title>
+    <!-- <script type="text/javascript" src="main.js"></script> -->
+    <!-- <script>
+       
+function save(){
+    const n = document.getElementById("fname");
+console.log(n.value);
+    var ans="";
+
+    // alert("hello"+n.value);
+    localStorage.setItem("name",n.value);
+    
+  
+}
+    </script> -->
+  </head>
+<body>
+<h1>Welcome to quiz</h1>
+<h2>Fill this form</h1>
+    <table border="1" cellspacing="5" cellpadding="5px">
+        <tr align="center">
+            <td >QUESTION</td>
+            <td>ANSWER</td>
+            <td>YOUR ANSWER </td>
+        </tr>
+        <tr align="center">
+            <td>q1: What is JavaScript?</td>
+            <td> Another name for Java</td>
+            <td id="q1"> </td>
+        </tr>
+        <tr align="center"> 
+            <td>q2: What are JavaScript Data Types</td>
+            <td> All the above</td>
+            <td id="q2"> </td>
+        </tr>
+        <tr align="center">
+            <td>q3: What are all the types of Pop up boxes available in JavaScript=</td>
+            <td> Both A and B</td>
+            <td id="q3"> </td>
+        </tr>
+        <tr align="center">
+            <td>q4: Which type of JavaScript language is=</td>
+            <td> Object-Based</td>
+            <td id="q4"> </td>
+        </tr>
+        <tr align="center">
+            <td>q5: The "function" and " var" are known as</td>
+            <td> Declaration statements</td>
+            <td id="q5"> </td>
+        </tr>
+        <tr align="center">
+            <td>q6:Which of the following type of a variable is volatile=</td>
+            <td> Mutable variable</td>
+            <td id="q6"> </td>
+        </tr>
+        <tr align="center">
+            <td>q7: The "new Point(3,2)", is a kind of _______ expression</td>
+            <td> Object Creation Expression</td>
+            <td id="q7"> </td>
+        </tr>
+        <tr align="center">
+            <td>q8: Which one of the following is an ternary operator:=</td>
+            <td> ?</td>
+            <td id="q8"> </td>
+        </tr>
+        <tr align="center">
+            <td>q9: Which one of the following is not a keyword</td>
+            <td> use strict</td>
+            <td id="q9"> </td>
+        </tr>
+        <tr align="center">
+            <td>q10: Which one of the following symbol is used for creating comments in the javascript:</td>
+            <td> //</td>
+            <td id="q10"> </td>
+        </tr>
+    </table>
+    </div>
+    
+    <script>
+    document.getElementById("q1").innerHTML=localStorage.getItem("givenans1");
+    document.getElementById("q2").innerHTML=localStorage.getItem("givenans2");
+    document.getElementById("q3").innerHTML=localStorage.getItem("givenans3");
+    document.getElementById("q4").innerHTML=localStorage.getItem("givenans4");
+    document.getElementById("q5").innerHTML=localStorage.getItem("givenans5");
+    document.getElementById("q6").innerHTML=localStorage.getItem("givenans6");
+    document.getElementById("q7").innerHTML=localStorage.getItem("givenans7");
+    document.getElementById("q8").innerHTML=localStorage.getItem("givenans8");
+    document.getElementById("q9").innerHTML=localStorage.getItem("givenans9");
+    document.getElementById("q10").innerHTML=localStorage.getItem("givenans10");
+    document.getElementById("q11").innerHTML=" your score is "+localStorage.getItem("scorecard");
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
