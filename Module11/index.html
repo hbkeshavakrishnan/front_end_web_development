@@ -30,12 +30,12 @@
 		render(){
 			return (<div class = "input-control">
 				<h1>Simple Calculator</h1>
-				<label for = "num1">Number 1: <input type = "text" id = "num1" placeholder = "first number" autofocus/></label><br/>
-				<label for = "num2">Number 2: <input type = "text" id = "num2" placeholder = "second number" autofocus/></label><br/><br/>
-				<label for="method_add"><input type="radio" name="method" id="method_add" value="add" checked/>Add</label>
-				<label for="method_sub"><input type="radio" name="method" id="method_sub" value="sub" checked/>Subtract</label>
-				<label for="method_mul"><input type="radio" name="method" id="method_mul" value="mul" checked/>Multiply</label>
-				<label for="method_div"><input type="radio" name="method" id="method_div" value="div" checked/>Divide</label><br/><br/>
+				<label>Number 1: <input type = "text" id = "num1" placeholder = "first number" autofocus/></label><br/>
+				<label>Number 2: <input type = "text" id = "num2" placeholder = "second number" autofocus/></label><br/><br/>
+				<label><input type="radio" name="method" id="method_add" value="add" checked/>Add</label>
+				<label><input type="radio" name="method" id="method_sub" value="sub" checked/>Subtract</label>
+				<label><input type="radio" name="method" id="method_mul" value="mul" checked/>Multiply</label>
+				<label><input type="radio" name="method" id="method_div" value="div" checked/>Divide</label><br/><br/>
 				<button id="calculate">Calculate</button><br/><br/><br/>
 				<p class = "answer">0</p>
 				</div>
@@ -87,43 +87,23 @@ btn.addEventListener ('click', function () {
 btn.addEventListener ('click', function () {
     var num1 = Number ( document.querySelector('#num11').value ),
             num2 = Number ( document.querySelector('#num21').value ),
-            // The Element to show result in
             rlt = document.querySelector('p.answer1');
     var answer = 0;
     answer = num1/((num2/3.281)*(num2/3.281));
+		if(answer < 16){
+			rlt.innerHTML = "BMI: "+answer+"\n" +"you are underweighted";
+	}
+	else if(answer < 25){
+		rlt.innerHTML = "BMI: "+answer+" and you are normal";
 
-    // Set content of HTML element.
-    
+	}
+	else if(answer < 30){
+		rlt.innerHTML = "BMI: "+answer+" and you are overweighted";
 
-    
-    rlt.innerHTML = answer;
-
+	}
+	else{
+		rlt.innerHTML = "BMI: "+answer+" and you are obese";
+	}
 });
 
-
-		// 		<div>
-		// 			<label>input1</label>
-		// 			<input type="text" name="name"    /><br/>
-		// 			<label>input2</label>
-
-		// 			<input type="text" name="rollno"  />
-		// 			<button onClick={this.showInput} >Submit </button>
-		// 		</div>
-		// 	);
-		// }
-		
-	// 	showInput = () =>{
-	// 		const name = document.getElementsByName("name")[0].value;
-	// 		const rollno = document.getElementsByName("rollno")[0].value;
-	// 		alert(name+" "+rollno);
-	// 		document.getElementById("showInput").innerHTML = '<h1>Entered Name : '+name+' and Roll No :' +rollno+'</h1>';
-	// 	}
-	// }
-	
-	// class App extends React.Component {
-	// 	render() {
-	// 		return (<div><Title x="Satya"/><Input rollno="1231234"/></div>);
-	// 	}
-	// }
-	
 </script>
